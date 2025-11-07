@@ -26,7 +26,7 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`hidden lg:block fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? "bg-white/80 backdrop-blur-md shadow-lg"
           : "bg-transparent"
@@ -41,7 +41,7 @@ export default function Navbar() {
             Morgan Widjaja
           </motion.div>
           
-          <div className="hidden md:flex gap-8">
+          <div className="flex gap-8">
             {navItems.map((item, index) => (
               <motion.div
                 key={item.href}
@@ -59,16 +59,6 @@ export default function Navbar() {
               </motion.div>
             ))}
           </div>
-
-          {/* Mobile menu button */}
-          <motion.button
-            whileTap={{ scale: 0.95 }}
-            className="md:hidden p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </motion.button>
         </div>
       </div>
     </motion.nav>

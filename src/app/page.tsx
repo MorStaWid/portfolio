@@ -1,5 +1,8 @@
 "use client";
 import Hero from "@/components/Hero";
+import MobileExperienceSection from "@/components/MobileExperienceSection";
+import MobileProjectsSection from "@/components/MobileProjectsSection";
+import MobileContactSection from "@/components/MobileContactSection";
 import { motion } from "framer-motion";
 import { Code, Brain, Palette, Users } from "lucide-react";
 
@@ -34,14 +37,21 @@ export default function Home() {
   return (
     <div>
       <Hero />
+
+      {/* Mobile-only sections */}
+      <div className="lg:hidden">
+        <MobileExperienceSection />
+        <MobileProjectsSection />
+        <MobileContactSection />
+      </div>
       
-      {/* About Section */}
+      {/* Desktop-only About Section */}
       <motion.section
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="py-20 bg-white"
+        className="hidden lg:block py-20 bg-white"
       >
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
@@ -85,13 +95,13 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* CTA Section */}
+      {/* Desktop-only CTA Section */}
       <motion.section
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="py-20 bg-gradient-to-br from-blue-50 to-purple-50"
+        className="hidden lg:block py-20 bg-gradient-to-br from-blue-50 to-purple-50"
       >
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">

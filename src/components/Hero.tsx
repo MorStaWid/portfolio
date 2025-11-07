@@ -4,7 +4,7 @@ import { Mail, Linkedin, Github, ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden py-10 lg:py-0">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 -z-10" />
       
@@ -24,9 +24,9 @@ export default function Hero() {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative mb-8"
+          className="relative mb-6 lg:mb-8"
         >
-          <div className="w-40 h-40 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
+          <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
             <img
               src="/profile.jpg"
               alt="Morgan Widjaja"
@@ -41,7 +41,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-gray-900 via-blue-600 to-purple-600 bg-clip-text text-transparent mb-4 leading-tight pb-2"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 via-blue-600 to-purple-600 bg-clip-text text-transparent mb-3 lg:mb-4 leading-tight pb-2"
         >
           Morgan Widjaja
         </motion.h1>
@@ -51,12 +51,12 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-xl md:text-2xl text-gray-600 mb-8 font-light"
+          className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 lg:mb-8 font-light flex flex-wrap items-center justify-center gap-x-2 lg:gap-x-4"
         >
           <span className="inline-block">Software Engineer</span>
-          <span className="mx-4 text-blue-400">•</span>
+          <span className="text-blue-400">•</span>
           <span className="inline-block">AI Developer</span>
-          <span className="mx-4 text-blue-400">•</span>
+          <span className="text-blue-400">•</span>
           <span className="inline-block">Frontend Specialist</span>
         </motion.div>
 
@@ -65,7 +65,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-lg text-gray-600 max-w-2xl mb-12 leading-relaxed"
+          className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl mb-8 lg:mb-12 leading-relaxed px-4"
         >
           Building intelligent, user-centered applications that bridge the gap between AI, design, and usability.
         </motion.p>
@@ -75,16 +75,16 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.0 }}
-          className="flex gap-4 mb-12"
+          className="flex flex-wrap justify-center gap-3 lg:gap-4 mb-8 lg:mb-12 px-4"
         >
           <motion.a
             href="mailto:mogistanlee@gmail.com"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="flex items-center gap-2 px-4 lg:px-6 py-2.5 lg:py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl text-sm lg:text-base"
           >
-            <Mail size={20} />
-            Email
+            <Mail size={18} className="lg:w-5 lg:h-5" />
+            <span>Email</span>
           </motion.a>
           <motion.a
             href="https://linkedin.com/in/morstawid"
@@ -92,10 +92,10 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-full hover:from-purple-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="flex items-center gap-2 px-4 lg:px-6 py-2.5 lg:py-3 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-full hover:from-purple-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl text-sm lg:text-base"
           >
-            <Linkedin size={20} />
-            LinkedIn
+            <Linkedin size={18} className="lg:w-5 lg:h-5" />
+            <span>LinkedIn</span>
           </motion.a>
           <motion.a
             href="https://github.com/morstawid"
@@ -103,10 +103,10 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="flex items-center gap-2 px-4 lg:px-6 py-2.5 lg:py-3 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl text-sm lg:text-base"
           >
-            <Github size={20} />
-            GitHub
+            <Github size={18} className="lg:w-5 lg:h-5" />
+            <span>GitHub</span>
           </motion.a>
         </motion.div>
 
@@ -117,12 +117,12 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 1.2 }}
           className="flex flex-col items-center text-gray-400"
         >
-          <span className="text-sm mb-2">Scroll to explore</span>
+          <span className="text-xs lg:text-sm mb-2">Scroll to explore</span>
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
           >
-            <ArrowDown size={24} />
+            <ArrowDown size={20} className="lg:w-6 lg:h-6" />
           </motion.div>
         </motion.div>
       </motion.div>
