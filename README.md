@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Morgan Widjaja - Portfolio
+
+A modern, responsive portfolio website built with Next.js, React, and Tailwind CSS.
+
+## Features
+
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Modern UI**: Clean, professional design with smooth transitions
+- **Fast Performance**: Built with Next.js for optimal loading speeds
+- **TypeScript**: Type-safe development for better code quality
+- **SEO Optimized**: Proper meta tags and semantic HTML
+
+## Pages
+
+- **Home**: Hero section with personal introduction and about me
+- **Experience**: Professional work experience and achievements
+- **Projects**: Showcase of technical projects and technologies used
+- **Contact**: Contact information and social links
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <your-repo-url>
+cd portfolio2.0
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+### Building for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is ready for deployment on Vercel:
 
-## Deploy on Vercel
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy with one click
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Customization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Adding Your Profile Image
+
+Replace `public/profile.jpg` with your own profile photo (recommended size: 300x300px).
+
+### Updating Content
+
+- **Personal Info**: Edit `src/components/Hero.tsx`
+- **Experience**: Update `src/app/experience/page.tsx`
+- **Projects**: Modify `src/app/projects/page.tsx`
+- **Contact**: Edit `src/app/contact/page.tsx`
+
+### Styling
+
+The project uses Tailwind CSS for styling. You can customize colors, fonts, and spacing by modifying the Tailwind classes in the components.
+
+## Technologies Used
+
+- **Next.js 15**: React framework for production
+- **React 18**: UI library
+- **TypeScript**: Type safety
+- **Tailwind CSS**: Utility-first CSS framework
+- **Vercel**: Deployment platform
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
