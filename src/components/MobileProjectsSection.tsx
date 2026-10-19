@@ -92,6 +92,14 @@ export default function MobileProjectsSection() {
 
   const projects = [
     {
+      name: "LinkedIn Clone",
+      description: "Full-stack social network with feeds, profiles, connections, messaging, and real-time Firebase updates.",
+      tech: ["React 19", "Vite", "Firebase", "Sass", "Ant Design"],
+      categories: ["Web Development"],
+      logo: "/linkedin-clone.svg",
+      link: "https://linkedin-clone-kappa-six.vercel.app/",
+    },
+    {
       name: "Search Engine & Web Crawler",
       description: "Built a scalable full-text search engine with multithreading, MinHash, and PageRank in SQLite.",
       tech: ["Python", "SQLite", "Multithreading", "MinHash", "PageRank"],

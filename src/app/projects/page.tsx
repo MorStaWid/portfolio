@@ -100,6 +100,15 @@ export default function Projects() {
 
   const projects = [
     {
+      name: "LinkedIn Clone",
+      description:
+        "Developed a full-stack social networking application with reusable React components, responsive UI, client-side routing, and protected screens for feeds, profiles, connections, messaging, and notifications. Designed Firestore data models and CRUD workflows for posts, comments, likes, connections, messages, and notifications, with Firebase Authentication, Google Sign-In, Cloud Storage image uploads, and real-time updates.",
+      tech: ["React 19", "Vite", "React Router 8", "Firebase", "Sass", "Ant Design"],
+      categories: ["Web Development"],
+      logo: "/linkedin-clone.svg",
+      link: "https://linkedin-clone-kappa-six.vercel.app/",
+    },
+    {
       name: "Search Engine & Web Crawler",
       description:
         "Built a scalable full-text search engine with multithreading, MinHash, and PageRank in SQLite. Features include web crawling, document indexing, and intelligent ranking algorithms.",
